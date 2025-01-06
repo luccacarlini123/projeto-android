@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('../fontes/idroid.otf');
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8E7C4;
+}
+
+p::before {
+    content: "\00a0\00a0\00a0\00a0\00a0";
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(34, 153, 87), rgb(3, 61, 29));
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+}
+
+header > section#bem-vindo {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+header > section#bem-vindo > h1 {
+    margin: 0;
+    text-shadow: 1px 1px 1px black;
+}
+
+header > section#bem-vindo > p {
+    text-shadow: 1px 1px 1px black;
+}
+
+header > nav {
+    padding: 0;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: rgb(198, 240, 198);
+    padding: 10px;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+header > nav > a:hover {
+    background-color: rgb(34, 153, 87);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: white;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+footer > p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgb(34, 153, 87);
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    box-shadow: -2px 1px 11px -4px black;
+    padding: 10px;
+}
+
+main > h2 {
+    margin: 0;
+    font-family: idroid;
+    color: rgb(3, 61, 29);
+}
+
+main > h3 {
+    font-family: idroid;
+    color: rgb(3, 61, 29);
+    background-image: linear-gradient(to right, rgb(34, 153, 87), white);
+    padding-left: 5px;
+}
+
+main > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.marcacao-texto-simples {
+    color: rgb(3, 61, 29);
+    font-weight: bold;
+}
+
+.marcacao-texto-decorada > a {
+    text-decoration: none;
+    background-color: rgb(34, 153, 87);
+    color: rgb(3, 61, 29);
+    padding: 1px;
+}
+
+.marcacao-texto-decorada > a::after {
+    content: ' 🔗';
+}
+
+.imagem-centralizada {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.video {
+    background-color: rgb(3, 61, 29);
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.final-artigo {
+    background-color: rgb(3, 61, 29);
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+}
+
+.final-artigo > h3 {
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+.final-artigo > p {
+    background-color: rgb(34, 153, 87);
+    margin: 0;
+    padding: 10px;
+}
+
+.final-artigo > ul {
+    background-color: rgb(34, 153, 87);
+    margin: 0;
+}
+
+@media screen and (max-width: 575px) {
+    main {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    main {
+        margin: auto 20px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        margin: auto 40px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    main {
+        margin: auto 60px;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    main {
+        margin: auto 160px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .imagem-centralizada {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    #bem-vindo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    header > nav > a {
+        display: block;
+        text-align: center;
+    }
+}
